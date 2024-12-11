@@ -10,14 +10,16 @@
     />
     <style>
       body {
-        font-family: Arial, sans-serif;
-        background-color: #fff;
+        overflow: hidden;
+        width: 1200px;
+        margin: 0;
+        padding: 0;
       }
       .container {
+        width: 100%;
         max-width: 1200px;
-        margin: 20px auto;
-        padding: 20px;
-        border: 1px solid #000;
+        overflow: hidden;
+        margin: 0 auto;
       }
       .header {
         text-align: center;
@@ -94,6 +96,45 @@
       }
       .table-input input:focus {
         outline: none;
+      }
+      @media print {
+        @page {
+          size: A4 landscape;
+          margin: 0;
+        }
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        .container {
+          max-width: 100%;
+          margin: 0;
+          padding: 0;
+          border: none;
+        }
+        .row {
+          margin: 0;
+          padding: 0;
+        }
+        .col-6 {
+          width: 50%;
+          padding: 0;
+        }
+        table {
+          width: 100%;
+          table-layout: fixed;
+        }
+        .table-input td {
+          width: auto;
+        }
+        /* Additional print-specific styles */
+        .signature div {
+          margin-top: 20px;
+        }
+        .photo-box {
+          font-size: 10px;
+          height: 120px;
+        }
       }
     </style>
   </head>
@@ -340,7 +381,7 @@
       <div class="row">
         <div class="col-6 p-5">
           <div
-            class="row "
+            class="row"
             style="
               margin: 20px;
               border: 2px solid #000;
@@ -372,7 +413,10 @@
         <div class="col-6 p-5">
           <div class="row mt-3">
             <div class="col-12 border-box">
-                <table class="table table-bordered text-center" style="border: 2px solid #000; border-collapse: collapse;">
+              <table
+                class="table table-bordered text-center"
+                style="border: 2px solid #000; border-collapse: collapse"
+              >
                 <thead>
                   <tr>
                     <th>Laporan</th>
