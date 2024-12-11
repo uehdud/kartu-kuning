@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kartu Pencari Kerja</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #000;
+      }
+      .header {
+        text-align: center;
+      }
+      .header img {
+        width: 80px;
+        margin-bottom: 10px;
+      }
+      .header h1,
+      .header h2 {
+        font-size: 16px;
+        margin: 0;
+      }
+      .header p {
+        margin: 0;
+        font-size: 12px;
+      }
+      .photo-box {
+        width: 80px;
+        height: 100px;
+        border: 1px solid #000;
+        margin: 10px auto;
+        text-align: center;
+        font-size: 9px;
+        line-height: 100px;
+      }
+      .checkbox-group {
+        font-size: 12px;
+        display: flex;
+        flex-wrap: wrap; /* Supaya checkbox bisa berpindah ke baris berikutnya */
+        gap: 7px; /* Jarak antar checkbox */
+        align-items: center;
+      }
+
+      .checkbox-group input[type="checkbox"] {
+        margin-right: 5px; /* Jarak kecil antara checkbox dan label */
+      }
+
+      .checkbox-group br {
+        flex-basis: 100%; /* Memaksa elemen di bawahnya pindah ke baris baru */
+        content: "";
+      }
+      .signature {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 10px;
+      }
+      .signature div {
+        height: 50px;
+        border-bottom: 1px solid #000;
+        width: 100px;
+        margin: 10px auto 0;
+      }
+      .table-input {
+        border: 1px solid #000;
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .table-input td {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border: 1px solid #000;
+        font-size: 14px;
+      }
+      .table-input input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        text-align: center;
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+      }
+      .table-input input:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        margin: 20px;
+        border: 2px solid #000;
+
+        box-sizing: border-box;
+      "
+    >
+      <div class="row">
+        <div class="col-6 p-5">
+          <table class="table table-borderless">
+            <colgroup>
+              <col style="width: auto" />
+              <col style="width: auto" />
+              <col style="width: auto" />
+            </colgroup>
+            <tr>
+              <td colspan="3"><b> PENDIDIKAN FORMAL:</b></td>
+            </tr>
+            <tr>
+              <td>SD/SEDERAJAT</td>
+              <td>: SD Negeri 1 Sarolangun</td>
+              <td>Th 2005</td>
+            </tr>
+            <tr>
+              <td>SMTP/SEDERAJAT</td>
+              <td>: SMP Negeri 1 Sarolangun</td>
+              <td>Th 2008</td>
+            </tr>
+            <tr>
+              <td>SMTA/D.I/AKTA.I</td>
+              <td>: SMA Negeri 1 Sarolangun</td>
+              <td>Th 2011</td>
+            </tr>
+            <tr>
+              <td>SM/D.II/D.III</td>
+              <td>: Universitas Jambi</td>
+              <td>Th 2015</td>
+            </tr>
+            <tr>
+              <td>AKTA II</td>
+              <td>: Tidak ada</td>
+              <td>Th -</td>
+            </tr>
+            <tr>
+              <td>AKTA III</td>
+              <td>: Tidak ada</td>
+              <td>Th -</td>
+            </tr>
+            <tr>
+              <td>S/PASCAS/AKTA IV/DIV</td>
+              <td>: Universitas Gadjah Mada</td>
+              <td>Th 2018</td>
+            </tr>
+            <tr>
+              <td>DOKTOR/S.3/AKTA V</td>
+              <td>: Tidak ada</td>
+              <td>Th -</td>
+            </tr>
+          </table>
+          <hr style="border: 1px solid #000000; margin-top: 10px" />
+          <p><b>KETERAMPILAN / PENGALAMAN KERJA:</b></p>
+          <p>1. Asisten Laboratorium, Universitas Jambi (2014-2015)</p>
+          <p>2. Staff HRD, PT Sarolangun Jaya (2016-2018)</p>
+          <p>3. Manager Operasional, CV Makmur Jaya (2019-Sekarang)</p>
+        </div>
+
+        <div class="col-6 p-5">
+          <div class="header">
+            <table style="width: 100%; border-collapse: collapse">
+              <tr>
+                <td style="width: 15%; text-align: center; vertical-align: top">
+                  <img src="sarolangun.png" alt="Logo" style="width: 80px" />
+                </td>
+                <td
+                  style="
+                    width: 85%;
+                    text-align: center;
+                    font-family: 'Times New Roman', Times, serif;
+                  "
+                >
+                  <h3 style="margin: 0; font-size: 16px">
+                    <b>PEMERINTAH KABUPATEN SAROLANGUN</b>
+                  </h3>
+                  <h1 style="margin: 3px 0; font-size: 20px">
+                    <b>DINAS TENAGA KERJA DAN TRANSMIGRASI</b>
+                  </h1>
+                  <p style="margin: 3px 0; font-size: 14px">
+                    Jl. Lintas Sumatera Km. 4,5 Telp. 0745 - 91381
+                  </p>
+                  <h2
+                    style="
+                      margin: 3px 0 0;
+                      font-size: 20px;
+                      text-transform: uppercase;
+                    "
+                  >
+                    <b>SAROLANGUN</b>
+                  </h2>
+                </td>
+              </tr>
+            </table>
+            <hr style="border: 3px solid #000000; margin-top: 10px" />
+          </div>
+          <div style="text-align: center">
+            <h2
+              style="
+                display: inline-block;
+                font-size: 16px;
+                text-transform: uppercase;
+                border: 2px solid #000;
+                padding: 10px 20px;
+                box-sizing: border-box;
+              "
+            >
+              <b>KARTU TANDA BUKTI PENDAFTARAN PENCARI KERJA</b>
+            </h2>
+          </div>
+
+          <table class="table table-borderless">
+            <tr>
+              <td>No. Pendaftaran Pencari Kerja</td>
+              <td>
+                <table class="table-input">
+                  <tr>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>No. Induk Kependudukan</td>
+              <td>
+                <table class="table-input">
+                  <tr>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>6</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="p-3" style="vertical-align: top; width: 30%">
+                <div class="photo-box">PAS FOTO 3 X 4</div>
+                <div
+                  class="signature"
+                  style="margin-top: 20px; text-align: center"
+                >
+                  <p>Tanda Tangan Pencari Kerja</p>
+                  <div></div>
+                </div>
+              </td>
+              <td style="vertical-align: top; width: 70%">
+                <table style="width: 100%; border-collapse: collapse">
+                  <tr>
+                    <td style="width: 30%">Nama Lengkap</td>
+                    <td>: Nama Saya</td>
+                  </tr>
+                  <tr>
+                    <td>Tempat/Tgl Lahir</td>
+                    <td>: Sarolangun, 15 Agustus 1995</td>
+                  </tr>
+                  <tr>
+                    <td>Jenis Kelamin</td>
+                    <td class="checkbox-group">
+                      : <input type="checkbox" checked /> Pria
+                      <input type="checkbox" /> Wanita
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Status</td>
+                    <td class="checkbox-group">
+                      : <input type="checkbox" checked /> Kawin
+                      <input type="checkbox" /> Belum Kawin
+                      <input type="checkbox" /> Janda/Duda
+                    </td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Agama</td>
+                    <td class="checkbox-group">
+                      : <input type="checkbox" checked /> Islam
+                      <input type="checkbox" /> Katolik
+                      <input type="checkbox" /> Protestan
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="checkbox-group">
+                      &nbsp; <input type="checkbox" /> Hindu
+                      <input type="checkbox" /> Budha
+                      <input type="checkbox" /> Lain-lain
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        margin: 20px;
+        border: 2px solid #000;
+
+        box-sizing: border-box;
+      "
+    >
+      <div class="row">
+        <div class="col-6 p-5">
+          <div
+            class="row "
+            style="
+              margin: 20px;
+              border: 2px solid #000;
+              padding: 20px;
+              box-sizing: border-box;
+            "
+          >
+            <h5 class="fw-bold">KETENTUAN</h5>
+            <ol>
+              <li>Berlaku Nasional</li>
+              <li>
+                Bila ada perubahan data / keterangan lainnya atau telah mendapat
+                pekerjaan harap segera melapor.
+              </li>
+              <li>
+                Apabila pencari kerja yang bersangkutan telah diterima bekerja
+                maka Instansi / Perusahaan yang menerima agar mengembalikan AK/1
+                ini kepada Dinas Tenaga Kerja dan Transmigrasi Kabupaten
+                Sarolangun.
+              </li>
+              <li>
+                Kartu ini berlaku selama 2 tahun dengan keharusan melapor setiap
+                6 bulan sekali bagi pencari kerja yang belum mendapat pekerjaan.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="col-6 p-5">
+          <div class="row mt-3">
+            <div class="col-12 border-box">
+                <table class="table table-bordered text-center" style="border: 2px solid #000; border-collapse: collapse;">
+                <thead>
+                  <tr>
+                    <th>Laporan</th>
+                    <th>Tgl - Bln - Thn</th>
+                    <th>
+                      Tanda Tangan Pengantar Kerja Petugas Pendaftaran
+                      (Dicantumkan NIP)
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Pertama</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Kedua</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Ketiga</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div
+            class="row mt-3"
+            style="
+              margin: 20px;
+              border: 2px solid #000;
+              padding: 20px;
+              box-sizing: border-box;
+            "
+          >
+            <div class="col-12 border-box">
+              <div class="mb-3">Diterima di:</div>
+              <div>Terhitung mulai tanggal:</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
